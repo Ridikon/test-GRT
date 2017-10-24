@@ -4,7 +4,7 @@ app.config(function($stateProvider) {
     var detailsState = {
         name: 'details',
         url: 'details',
-        templateUrl: '/details.html',
+        templateUrl: '../details.html',
         controller: 'unsplashCtrl'
     }
 
