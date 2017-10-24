@@ -3,7 +3,7 @@ var app = angular.module('unsplashApp', ["ui.router"]);
 app.config(function($stateProvider) {
     var detailsState = {
         name: 'details',
-        url: '/details',
+        url: 'details',
         templateUrl: '../details.html',
         controller: 'unsplashCtrl'
     }

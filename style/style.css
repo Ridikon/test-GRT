@@ -74,18 +74,6 @@
 	display: inline-block;
 }
 
-@media screen and (max-width: 970px){
-	.img-btn {
-		font-size: 3rem;
-	}
-}
-
-@media screen and (max-width: 700px){
-	.img-btn {
-		font-size: 3rem;
-	}
-}
-
 .like-button {
 	padding-left: 30px;
 	margin-right: 5px;
