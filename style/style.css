@@ -1,0 +1,166 @@
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.description {
+	text-align: center;
+	font-size: 3rem;
+}
+
+.description h1 {
+	display: inline;
+}
+
+.img-wrapper {
+	display: inline-block;
+	position: relative;
+	width: calc(25% - 16px);
+	margin: 10px 6px;
+}
+
+.img-wrapper:hover {
+	-webkit-box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+@media screen and (max-width: 970px){
+	.img-wrapper {
+		width: calc(50% - 16px);
+	}
+}
+
+@media screen and (max-width: 700px){
+	.img-wrapper {
+		width: calc(100% - 16px);
+	}
+}
+
+.img-wrapper:hover .img-description {
+	opacity: 1;
+}
+
+.img {
+	vertical-align: middle;
+	width: 100%;
+}
+
+.img-description {
+	opacity: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	-webkit-transition: opacity 1s ease-out 0.5s;
+	-o-transition: opacity 1s ease-out 0.5s;
+	-webkit-transition: opacity 0.5s;
+	-o-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.top-buttons {
+	margin: 10px 10px 0 0;
+	text-align: right;
+}
+
+.img-btn {
+	position: relative;
+	text-decoration: none;
+	color: #e3e3e3;
+	background-color: #1f1f1f;
+	padding: 5px 9px;
+	border-radius: 5px;
+	display: inline-block;
+}
+
+@media screen and (max-width: 970px){
+	.img-btn {
+		font-size: 3rem;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.img-btn {
+		font-size: 3rem;
+	}
+}
+
+.like-button {
+	padding-left: 30px;
+	margin-right: 5px;
+}
+
+.img-date {
+	color: #e3e3e3;
+}
+
+.heart {
+	position: absolute;
+	left: 12px;
+	top: 50%;
+	width: 10px;
+	height: 7px;
+	background-color: red;
+	border-radius: 0 50px 50px 0;
+	-webkit-transform: translateY(-50%) rotate(315deg);
+	    -ms-transform: translateY(-50%) rotate(315deg);
+	        transform: translateY(-50%) rotate(315deg);
+}
+
+.heart:before {
+	position: absolute;
+	width: 7px;
+	height: 10px;
+	left: 0px;
+	bottom: 0px;
+	content: "";
+	background-color: red;
+	border-radius: 50px 50px 0 0;
+}
+
+.bottom-buttons {
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+}
+
+.autor {
+	margin: 0 0 0 10px;
+}
+
+.details-button {
+	color: #e3e3e3;
+	float: right;
+	padding: 5px;
+	margin: 0 20px 0 0;
+}
+
+.details-table {
+	margin: 50px auto;
+}
+
+@media screen and (max-width: 700px){
+	.details-table {
+		font-size: 2rem;
+	}
+}
+
+.details-table th {
+	font-weight: 700;
+}
+
+.details-table th, 
+.details-table td {
+	padding: 5px;
+	border: solid 1px #000;
+}
+
+.pagination-list {
+	margin: 50px 0;
+	text-align: center;
+}
+
+.pagination-link {
+	margin: 0 20px;
+}
